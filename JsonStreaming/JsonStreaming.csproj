@@ -1,0 +1,39 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFrameworks>net8.0;net9.0;net10.0</TargetFrameworks>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+    <LangVersion>latest</LangVersion>
+
+    <PackageId>JsonStreaming</PackageId>
+    <Version>1.0.0</Version>
+    <Authors>XeNz</Authors>
+    <Product>JsonStreaming</Product>
+    <Description>High-performance streaming JSON array deserialization for ASP.NET Core using System.IO.Pipelines. Supports source-generated JSON for Native AOT compatibility with minimal memory allocations.</Description>
+    <PackageTags>json;streaming;pipelines;aspnetcore;performance;aot;native-aot;source-generation;deserialization;minimal-api</PackageTags>
+    <PackageProjectUrl>https://github.com/XeNz/JsonStreaming</PackageProjectUrl>
+    <RepositoryUrl>https://github.com/XeNz/JsonStreaming</RepositoryUrl>
+    <RepositoryType>git</RepositoryType>
+    <PackageLicenseExpression>MIT</PackageLicenseExpression>
+    <PackageReadmeFile>README.md</PackageReadmeFile>
+    <PackageReleaseNotes>Initial release: Streaming JSON array deserialization with System.IO.Pipelines, Native AOT support, ArrayPool-based buffer management, ASP.NET Core Minimal API integration</PackageReleaseNotes>
+
+    <GenerateDocumentationFile>true</GenerateDocumentationFile>
+    <NoWarn>$(NoWarn);1591</NoWarn>
+
+    <Deterministic>true</Deterministic>
+
+    <IncludeSymbols>true</IncludeSymbols>
+    <SymbolPackageFormat>snupkg</SymbolPackageFormat>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <FrameworkReference Include="Microsoft.AspNetCore.App"/>
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="../README.md" Pack="true" PackagePath="/"/>
+  </ItemGroup>
+
+</Project>

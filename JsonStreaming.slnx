@@ -1,0 +1,17 @@
+<Solution>
+    <Folder Name="/Solution Items/">
+        <File Path=".gitignore"/>
+        <File Path="README.md"/>
+    </Folder>
+    <Project Path="JsonStreaming\JsonStreaming.csproj" Type="C#"/>
+    <Project Path="JsonStreaming.Tests\JsonStreaming.Tests.csproj" Type="C#"/>
+    <Project Path="JsonStreaming.Benchmarks\JsonStreaming.Benchmarks.csproj" Type="C#"/>
+    <Project Path="JsonStreaming.Example\JsonStreaming.Example.csproj" Type="C#"/>
+    <Configurations>
+        <BuildType Name="Debug"/>
+        <BuildType Name="Release"/>
+        <Platform Name="Any CPU"/>
+        <Platform Name="x64"/>
+        <Platform Name="x86"/>
+    </Configurations>
+</Solution>
